@@ -1,0 +1,222 @@
+{% extends "base_template.html" %}
+
+  
+  
+  {% block content %}
+
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>C-PSICOLOGICO</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- iconos-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container-fluid">
+
+
+
+    <header id="masthead" class="site-header " role="banner">
+      <div class="header-wrap">
+        <h1> CENTRO PSICOLOGICO</h1>
+    </div>
+<!--ejempl-->
+<div class="respmenu">
+  <input type="checkbox">
+  <i class="fas fa-bars"></i>
+  <i class="fas fa-times"></i>
+  
+  <nav>
+    <ul>
+          <li><a href="/pagina">Home</a></li>
+          <li><a href="/servicios">Servicios</a></li>
+          <li><a href="/base">base de datos</a></li>
+          <li><a href="/contacto">Contacto</a></li>
+          <li><a href="/ubicacion">Ubicacion</a></li>
+    </ul>
+  </nav>
+</div>
+
+<!--fin ejemplo-->
+
+
+      
+    </header>
+    <section>
+      <!--ejemplo-->
+      <div>
+
+        <form class="Formulario" action="mailto:@gmail.com" method="post"enctype="text/plain">
+
+          <!--ejemplo-->
+
+          <!--fin ejemplo-->
+
+
+
+
+
+          <h3> Solicita una consulta </h3>
+
+          <span class="bfErrorMessage" style="display:none"></span>
+          <section class="bfElemWrap bfLabelLeft" id="bfElemWrap610" style="background: rgb(239, 245, 250);">
+
+            <label id="bfLabel610" for="ff_elem610">Nombre<span class="bfRequired">*</span>
+            </label>
+
+            <input class="ff_elem" type="text" name="ff_nm_NOmbre[]" value="" id="ff_elem610">
+          </section>
+          <section class="bfElemWrap bfLabelLeft" id="bfElemWrap613" style="background: rgb(239, 245, 250);">
+            <label id="bfLabel613" for="ff_elem613">Apellidos</label>
+            <input class="ff_elem" type="text" name="ff_nm_apellidos[]" value="" id="ff_elem613">
+          </section>
+          <section class="bfElemWrap bfLabelLeft" id="bfElemWrap614" style="background: rgb(239, 245, 250);">
+            <label id="bfLabel614" for="ff_elem614">Dirección</label>
+            <input class="ff_elem" type="text" name="ff_nm_direccion[]" value="" id="ff_elem614">
+          </section>
+
+          <section class="bfElemWrap bfLabelLeft" id="bfElemWrap616" style="background: rgb(239, 245, 250);">
+            <label id="bfLabel616" for="ff_elem616">Provincia</label>
+            <select class="ff_elem chzn-done" name="ff_nm_provincia[]" id="ff_elem616">
+              <option value="">Seleccione</option>
+              <option value="Ciudad de Buenos Aires">Ciudad de Buenos Aires</option>
+              <option value="Buenos Aires">Buenos Aires</option>
+              <option value="Catamarca">Catamarca</option>
+              <option value="Chaco">Chaco</option>
+              <option value="Chubut">Chubut</option>
+              <option value="Cordoba">Cordoba</option>
+              <option value="Corrientes">Corrientes</option>
+              <option value="Entre Rios">Entre Rios</option>
+              <option value="Formosa">Formosa</option>
+              <option value="Jujuy">Jujuy</option>
+              <option value="La Pampa">La Pampa</option>
+              <option value="La Rioja">La Rioja</option>
+              <option value="Mendoza">Mendoza</option>
+              <option value="Misiones">Misiones</option>
+              <option value="Neuquen">Neuquen</option>
+              <option value="Rio Negro">Rio Negro</option>
+              <option value="Salta">Salta</option>
+              <option value="San Juan">San Juan</option>
+              <option value="San Luis">San Luis</option>
+              <option value="Santa Cruz">Santa Cruz</option>
+              <option value="Santa Fe">Santa Fe</option>
+              <option value="Santiago del Estero">Santiago del Estero</option>
+              <option value="Tierra del Fuego">Tierra del Fuego</option>
+              <option value="Tucuman">Tucuman</option>
+
+            </select>
+          </section>
+         
+          <section class="bfElemWrap bfLabelLeft" id="bfElemWrap618" >
+            <label id="bfLabel618" for="ff_elem618">Teléfono</label>
+            <input class="ff_elem" type="text" name="ff_nm_telefono[]" value="" id="ff_elem618">
+          </section>
+          <section class="bfElemWrap bfLabelLeft" id="bfElemWrap611" style="background: rgb(239, 245, 250);">
+            <label id="bfLabel611" for="ff_elem611">Email<span class="bfRequired">*</span>
+            </label>
+            <input class="ff_elem" type="text" name="ff_nm_email[]" value="" id="ff_elem611">
+          </section>
+          <section class="bfElemWrap bfLabelLeft" id="bfElemWrap612" style="background: rgb(239, 245, 250);">
+            <label id="bfLabel612" for="ff_elem612">Comentarios<span class="bfRequired">*</span>
+            </label>
+            <textarea cols="20" rows="5" class="ff_elem" name="ff_nm_message[]" id="ff_elem612"></textarea>
+          </section>
+
+          <div class="button">
+            <button type="submit">Enviar</button>
+
+          </div>
+
+
+
+          <!--  fin ejemplo-->
+
+        </form>
+    </section>
+    <div class="whatsapp">
+      <h4>Sino podes escribirnos directamente</h4>
+      <h4>haciendo click en el boton de abajo</h4>
+      <br>
+        <div class="btn-w">
+      <button><img class="btn-whatsapp" src="static/img/chat_whatsapp.png" width="100" height="100" alt="Whatsapp"
+        onclick="window.location.href='https://wa.me/?text=Hola!%20Estoy%20interesado%20en%20tu%20servicio' , '_blank'"
+        target="_blank"></button>
+    </div>
+    </div>
+
+    <!--ejemplo-->
+    
+    <!--fin de ejemplo-->
+
+
+    <br>
+    <br>
+    <footer id="pie_pagina" class="site-footer">
+
+      
+
+
+
+
+
+      <div class="site-info conteiner">
+        <div class="">
+          <ul class="social-footer">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/"> <span class="fab fa-twitter"> </span> </a>
+              <a href="https://web.whatsapp.com/"> <span class="fab fa-whatsapp-square"> </span> </a>
+              <a href="https://www.instagram.com/?hl=es-la"> <span class="fab fa-instagram"> </span> </a>
+              <a href="https://www.facebook.com/"> <span class="fab fa-facebook-square"></span></a>
+              <a href="https://ar.linkedin.com/"> <span class="fab fa-linkedin"></span target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <a href="index.html">CENTRO PSICOLOGICO INTEGRAL</a> <br>
+          
+          <a href="tel://0114445555">TEL: 0114445555 </a><br>
+          <a href="mailto:CENTROINTEGRAL@gmail.com">email:CENTROINTEGRAL@gmail.com</a>
+        </div><br>
+
+        <p> © 2021 Buenos Aires. Todos los derechos reservados</p>
+      </div>
+
+    </footer>
+  </div>
+
+
+</body>
+
+</html>
+
+{% endblock %}
